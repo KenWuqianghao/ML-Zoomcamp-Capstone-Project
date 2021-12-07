@@ -1,15 +1,15 @@
 import tflite_runtime.interpreter as tflite
 from keras_image_helper import create_preprocessor
 
-interpreter = tflite.Interpreter(model_path='cats-dogs-v2.tflite')
+interpreter = tflite.Interpreter(model_path='model.tflite')
 interpreter.allocate_tensors()
 
 input_index = interpreter.get_input_details()[0]['index']
 output_index = interpreter.get_output_details()[0]['index']
 
-preprocessor = create_preprocessor('xception', target_size=(150, 150))
+preprocessor = create_preprocessor('xception', target_size=(350, 350))
 
-classes = ['dog', 'cat']
+classes = ['Animal Crosssing', 'Doom']
 
 def predict(url):
     
