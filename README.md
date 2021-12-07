@@ -7,7 +7,7 @@ In this project, I created a deep learning model to classify images to be animal
 1. Clone this repo to your local machine
 2. cd into the directory and create the docker image using
 ```docker
-docker built -t animal-doom .
+docker build -t animal-doom .
 ```
 3. Run the image by using
 ```docker
