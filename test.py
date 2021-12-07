@@ -1,8 +1,8 @@
 import requests
 
 url = 'http://localhost:8080/2015-03-31/functions/function/invocations'
-image = 'https://media.wired.com/photos/5e8cebbda231050008136013/master/pass/animal-crossing-history-wired.jpg'
-data = {'url':image}
-result = requests.post(url, json=data).json()
 
+data = {'url':'https://user-images.githubusercontent.com/20444505/144915447-cfaae0f4-ca78-4828-b20b-eae04b093d2c.png'}
+
+result = requests.post(url, json=data).json()
 print(result)
